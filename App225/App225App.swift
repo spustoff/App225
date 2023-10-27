@@ -50,7 +50,7 @@ func notificationsGetStarted() {
     
     let request = AF.request(url, method: .get)
     
-    request.responseDecodable(of: NewsModel.self) { response in
+    request.response { response in
                        
         switch response.result {
             
